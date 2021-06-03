@@ -484,6 +484,7 @@ button {
 .subscribe-input {
   width: 358px;
   height: 50px;
+  margin-right: 12px;
   padding-left: 16px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -679,8 +680,13 @@ button {
   opacity: 1;
   border-radius: 2px;
 }
+
 .policy-checkbox:checked + * .checkbox-icon-inactive {
   opacity: 0;
+}
+
+.policy-checkbox:focus + * .checkbox-icon-inactive {
+  fill: var(--accent);
 }
 
 .policy-link {
